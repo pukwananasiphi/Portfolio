@@ -1,0 +1,403 @@
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        
+        body {
+            background-color: #e6dace;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        main {
+            flex: 1;
+        }
+        /* Header styles */
+        header {
+            background-color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .custom-navbar {
+            background-color: white !important;
+        }
+        
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-square {
+            width: 20px;
+            height: 20px;
+            background-color: #0066ff;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .title {
+            color: #666;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        
+        nav ul li a:hover {
+            color: #0066ff;
+        }
+
+        /* Hide the dropdown by default */
+.dropdown-menu {
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute; /* Position it properly */
+    background-color: white; /* Set the background */
+    border: 1px solid #ccc; /* Optional: Add border */
+}
+
+/* Display dropdown on hover */
+li:hover .dropdown-menu {
+    display: block;
+}
+
+/* Optional: Style for dropdown items */
+.dropdown-item {
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+        
+        /* Hero section styles */
+        .hero {
+            padding: 60px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .profile-card {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 40%;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 10px;
+        }
+        
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .profile-divider {
+            width: 50px;
+            height: 2px;
+            background-color: #0066ff;
+            margin: 15px auto;
+        }
+        
+        .profile-title {
+            color: #666;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        /* Style all font awesome icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        
+        .hero-content {
+            height: auto;
+            text-align: center;
+            width: 55%;
+        }
+        
+        .hero-title {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero-subtitle {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        
+        .hero-buttons {
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            padding: 10px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        
+        .btn-primary {
+            background-color: #0066ff;
+            color: white;
+        }
+        
+        .btn-outline {
+            border: 2px solid #333;
+            color: #333;
+        }
+        
+        .hero-text {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        /* Resume hero section */
+/* Resume hero section */ 
+.resume-hero {     
+    padding: 80px 0 40px;     
+    text-align: center; 
+}  
+
+.page-title {     
+    font-size: 42px;     
+    font-weight: bold;     
+    position: relative;     
+    display: inline-block;     
+    margin-bottom: 30px; 
+}  
+
+.blue-square {     
+    display: inline-block;     
+    width: 25px;     
+    height: 25px;     
+    background-color: #0066ff;     
+    margin-right: 10px; 
+}  
+
+/* Experience section styles */ 
+.experience-section {     
+    padding: 40px 0; 
+}  
+
+.section-title {     
+    font-size: 28px;     
+    margin-bottom: 30px;     
+    color: #333; 
+    display: inline-block; /* Allow the title to be placed inline */
+}  
+
+/* Updated download button positioning */
+.download-btn {     
+    float: right; /* Position the button to the right */
+    background-color: #0066ff;     
+    color: white;     
+    padding: 12px 30px;     
+    border-radius: 30px;     
+    text-decoration: none;     
+    font-weight: bold;     
+    margin-bottom: 30px;     
+    transition: background-color 0.3s; 
+}  
+
+.download-btn:hover {     
+    background-color: #0052cc; 
+}  
+
+
+
+.experience-card {     
+    background-color: white;     
+    padding: 40px;     
+    margin-bottom: 30px;     
+    border-radius: 4px;     
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    clear: both; /* Ensure cards appear below the floated elements */
+}  
+
+.experience-header {     
+    display: flex;     
+    justify-content: space-between;     
+    margin-bottom: 20px;     
+    align-items: center; 
+}  
+
+.experience-date {     
+    font-size: 18px;     
+    color: #0066ff;     
+    font-weight: bold; 
+}  
+
+.experience-position {     
+    font-size: 18px;     
+    font-weight: bold; 
+}  
+
+.company-name {     
+    font-size: 16px;     
+    margin-bottom: 5px; 
+}  
+
+.company-location {     
+    font-size: 14px;     
+    color: #666;     
+    margin-bottom: 15px; 
+}  
+
+.experience-description {     
+    line-height: 1.6;     
+    color: #444; 
+}  
+
+/* Skills section styles */ 
+.skills-section {     
+    padding: 40px 0 80px; 
+}  
+
+.skills-container {     
+    background-color: white;     
+    padding: 30px;     
+    margin-bottom: 40px;     
+    border-radius: 4px;     
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+}  
+
+.skills-list {     
+    display: flex;     
+    flex-wrap: wrap;     
+    gap: 20px; 
+}  
+
+.skill-item {     
+    display: flex;     
+    align-items: center;     
+    width: calc(50% - 10px);     
+    margin-bottom: 15px; 
+}  
+
+.skill-marker {     
+    width: 15px;     
+    height: 15px;     
+    background-color: #0066ff;     
+    margin-right: 10px; 
+}
+        
+        /* Footer styles */
+        footer {
+            background-color: white;
+            padding: 20px 0;
+            border-top: 1px solid #eee;
+            margin-top: auto;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .copyright {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .footer-links {
+            display: flex;
+        }
+        
+        .footer-column {
+            margin-left: 40px;
+            text-align: right;
+        }
+        
+        .footer-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .footer-value {
+            color: #666;
+        }
+        
+        .footer-value a {
+            color: #666;
+            text-decoration: none;
+        }
+        
+        .footer-social {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 5px;
+        }
+        
+        .footer-social a {
+            margin-left: 10px;
+            color: #333;
+            text-decoration: none;
+        }
