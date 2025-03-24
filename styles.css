@@ -216,6 +216,8 @@ li:hover .dropdown-menu {
             color: #666;
             line-height: 1.6;
             margin-bottom: 20px;
+            text-align: center;
+            padding: 15px;
         }
         
         /* Resume hero section */
